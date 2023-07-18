@@ -1,4 +1,194 @@
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Work Sans", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+}
+.section-title {
+  display: flex;
+  align-items: center;
+  color: #0b0223;
+  font-size: 38px;
+  font-weight: 700;
+}
+.frame-img {
+  width: 70px;
+  height: 34px;
+  margin-right: 10px;
+}
+.span-color {
+  color: #ff42a5;
+}
+nav > ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+nav li {
+  list-style: none;
+}
+li a {
+  text-decoration: none;
+  color: #3c354f;
+  font-size: 16px;
+  font-weight: 500;
+}
+.follow-title {
+  border-radius: 8px;
+  background-color: rgba(11, 2, 35, 0.1);
+  padding: 10px;
+}
+.fa-youtube {
+  color: #f61c0d;
+  margin-left: 5px;
+}
+.fa-tiktok {
+  color: black;
+  margin-left: 5px;
+}
+.banner-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #faf6fd;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 15px;
+}
+.banner-title {
+  color: #0b0223;
+  font-size: 33px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.banner-goat {
+  font-size: 65px;
+  font-weight: 800;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.banner-description {
+  color: #534c64;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 25px;
+  text-transform: lowercase;
+}
+.banner-btn1 {
+  padding: 15px 30px;
+  border-radius: 48px;
+  border: 0;
+  color: #fff;
+  background-color: #ff42a5;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  margin-right: 10px;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+.banner2 {
+  background-color: #4ec5f7;
+}
+.banner-img {
+  width: 450px;
+  height: 410px;
+}
+/* We are gamer section part style */
+.gamer-part {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  gap: 25px;
+  padding-top: 10px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 66, 165, 0.03) 0%,
+    rgba(255, 66, 165, 0.03) 100%
+  );
+  text-align: end;
+}
+.gamer-img {
+  width: 510px;
+  height: 320px;
+}
+.gamer-title {
+  font-size: 35px;
+  font-weight: 700;
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  margin-bottom: 10px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gamer-description {
+  color: #534c64;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  width: 350px;
+  padding: 5px;
+}
+.gamer-btn {
+  margin-right: 0;
+}
+.gamer-purpose {
+  color: #534c64;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 40px;
+}
+.gamer-unleash {
+  color: #534c64;
+  font-size: 20px;
+  font-weight: 700;
+}
+/* Online Games Funny Videos style */
+
+.card {
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 40px;
+}
+.card-title {
+  text-align: center;
+}
+.card-title-description {
+  text-align: center;
+}
+.card-section {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  gap: 15px;
+}
+.card-content {
+}
+.card-img {
+  width: 212px;
+  height: 280px;
+  border-radius: 16px;
+  margin-top: 20px;
+}
+.card-description {
+  color: #534c64;
+  font-size: 9px;
+  width: 190px;
+  font-weight: 500;
+  line-height: 19px;
 }
