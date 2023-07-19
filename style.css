@@ -208,7 +208,7 @@ li a {
   background-image: url("images/Rectangle\ 5.png");
   background-repeat: no-repeat;
   background-size: 100%;
- width: 212px;
+  width: 212px;
   height: 245px;
   border-radius: 16px;
 }
@@ -242,24 +242,54 @@ li a {
   padding-left: 70px;
   left: 0;
 }
-.primary:hover {
-  opacity: 0.8;
+.card-img-part-1:hover {
+  border-radius: 16px;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(0, 0, 0, 0.6) 100%
+    ),
+    url(images/Rectangle\ 4.png), lightgray 50% / cover no-repeat;
+    background-size: 100%;
   border: 3px solid #ff42a5;
 }
+.card-img-part-2:hover {
+  border-radius: 16px;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(0, 0, 0, 0.6) 100%
+    ),
+    url(images/Rectangle\ 5.png), lightgray 50% / cover no-repeat;
+    background-size: 100%;
+  border: 3px solid #ff42a5;
+}
+.card-img-part-3:hover {
+  border-radius: 16px;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(0, 0, 0, 0.6) 100%
+    ),
+    url(images/Rectangle\ 7.png), lightgray 50% / cover no-repeat;
+    background-size: 100%;
+  border: 3px solid #ff42a5;
+}
+.card-img-part-4:hover {
+  border-radius: 16px;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(0, 0, 0, 0.6) 100%
+    ),
+    url(images/Rectangle\ 6.png), lightgray 50% / cover no-repeat;
+    background-size: 100%;
+  border: 3px solid #ff42a5;
+}
+
 .img-1 {
   color: #ff42a5;
 }
-
-/* .card-img {
-  opacity: 0.7;
-  width: 212px;
-  height: 250px;
-  border-radius: 16px;
-  margin-top: 20px;
-}
-.card-img:hover{
- opacity: 1;
-}  */
 .card-description {
   color: #534c64;
   font-size: 11px;
@@ -316,7 +346,7 @@ li a {
 /* All sponsor game section style */
 .sponsor-content {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   max-width: 950px;
   margin: 0 auto;
   margin-top: 150px;
@@ -405,4 +435,133 @@ footer {
   font-size: 12px;
   font-weight: 500;
   line-height: normal;
+}
+
+/* responsive media queries */
+/* mobile devices */
+@media screen and (max-width: 576px) {
+  nav,
+  nav > ul,
+  .gamer-part,
+  .card-content,
+  .play-section {
+    flex-direction: column;
+  }
+  .banner-section {
+    flex-direction: column-reverse;
+  }
+  .section-title {
+    margin-bottom: 20px;
+  }
+  nav {
+    background-color: none;
+    box-shadow: none;
+  }
+  .banner-img {
+    width: 398px;
+    height: 473px;
+    margin-bottom: 60px;
+  }
+  .gamer-img {
+    width: 415px;
+    height: 327px;
+  }
+  .gamer-content {
+    text-align: center;
+  }
+  .primary {
+    width: 355px;
+    height: 413px;
+    margin-bottom: 10px;
+  }
+  .img-hover {
+    padding-top: 55%;
+  }
+  .primary:hover .img-hover {
+    padding-left: 140px;
+  }
+  .card-title-description {
+    font-size: 12px;
+  }
+  .card-description {
+    font-size: 12px;
+    width: max-content;
+    margin: 0 auto;
+  }
+  .play-title {
+    margin-left: 0;
+    text-align: center;
+  }
+  .play-description {
+    text-align: center;
+  }
+  .play-bottom-img img {
+    width: 156px;
+    height: 140px;
+  }
+  .play-img {
+    width: 280px;
+    height: 433px;
+    border: 8px;
+  }
+  .sponsor-content {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    margin-top: 60px;
+  }
+  .sponsor-img img {
+    width: 25px;
+    height: 32px;
+  }
+  .sponsor-img {
+    font-size: 11px;
+    padding: 5px;
+  }
+  .story,
+  .footer-icon {
+    grid-template-columns: repeat(3, 1fr);
+    line-height: 50px;
+  }
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+    line-height: 30px;
+  }
+}
+
+/* tablet or medium devices */
+@media screen and (min-width: 576px) and (max-width: 960px) {
+  .gamer-part,
+  .play-section 
+  {
+    flex-direction: column;
+    background: none;
+  }
+
+   .banner-section {
+    flex-direction: column-reverse;
+  }
+  .banner-img{
+    margin-bottom: 90px;
+  }
+  .gamer-img {
+    width: 415px;
+    height: 327px;
+  }
+  .gamer-content {
+    text-align: center;
+  }
+  .card-content{
+    flex-wrap: wrap;
+    
+  }
+  .play-title {
+    margin-left: 0;
+    text-align: center;
+  }
+  .play-description {
+    text-align: center;
+  }
+  .sponsor-content{
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
