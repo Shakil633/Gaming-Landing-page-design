@@ -61,10 +61,12 @@ li a {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* background-color: #faf6fd; */
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 15px;
+}
+.fa-download{
+  color: #e44bbe;
 }
 .banner-title {
   color: #0b0223;
