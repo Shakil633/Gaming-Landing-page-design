@@ -61,13 +61,30 @@ li a {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 15px;
 }
-.fa-download{
+.fa-regular {
   color: #e44bbe;
 }
+.fa-solid {
+  color: #e44bbe;
+}
+.banner-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  padding: 80px;
+  background-image: url("images/Group\ 14.png");
+  fill: linear-gradient(
+    223deg,
+    rgba(140, 87, 238, 0.03) 0%,
+    rgba(241, 68, 174, 0.03) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-x: center;
+}
+
 .banner-title {
   color: #0b0223;
   font-size: 33px;
@@ -110,6 +127,7 @@ li a {
 .banner-img {
   width: 450px;
   height: 410px;
+  padding-right: 155px;
 }
 /* We are gamer section part style */
 .gamer-part {
@@ -252,7 +270,7 @@ li a {
       rgba(0, 0, 0, 0.6) 100%
     ),
     url(images/Rectangle\ 4.png), lightgray 50% / cover no-repeat;
-    background-size: 100%;
+  background-size: 100%;
   border: 3px solid #ff42a5;
 }
 .card-img-part-2:hover {
@@ -263,7 +281,7 @@ li a {
       rgba(0, 0, 0, 0.6) 100%
     ),
     url(images/Rectangle\ 5.png), lightgray 50% / cover no-repeat;
-    background-size: 100%;
+  background-size: 100%;
   border: 3px solid #ff42a5;
 }
 .card-img-part-3:hover {
@@ -274,7 +292,7 @@ li a {
       rgba(0, 0, 0, 0.6) 100%
     ),
     url(images/Rectangle\ 7.png), lightgray 50% / cover no-repeat;
-    background-size: 100%;
+  background-size: 100%;
   border: 3px solid #ff42a5;
 }
 .card-img-part-4:hover {
@@ -285,7 +303,7 @@ li a {
       rgba(0, 0, 0, 0.6) 100%
     ),
     url(images/Rectangle\ 6.png), lightgray 50% / cover no-repeat;
-    background-size: 100%;
+  background-size: 100%;
   border: 3px solid #ff42a5;
 }
 
@@ -355,7 +373,6 @@ li a {
   justify-items: center;
   gap: 20px;
 }
-
 .sponsor-img {
   display: flex;
   align-items: center;
@@ -452,17 +469,24 @@ footer {
   .banner-section {
     flex-direction: column-reverse;
   }
+  .banner-section {
+    padding-right: 0;
+  }
   .section-title {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   nav {
     background-color: none;
     box-shadow: none;
   }
   .banner-img {
-    width: 398px;
+    width: 390px;
     height: 473px;
     margin-bottom: 60px;
+    padding-right: 0;
+  }
+  .banner-content {
+    padding: 20px;
   }
   .gamer-img {
     width: 415px;
@@ -533,16 +557,18 @@ footer {
 /* tablet or medium devices */
 @media screen and (min-width: 576px) and (max-width: 960px) {
   .gamer-part,
-  .play-section 
-  {
+  .play-section {
     flex-direction: column;
     background: none;
   }
-
-   .banner-section {
+  .banner-content {
+    padding: 38px;
+  }
+  .banner-section {
     flex-direction: column-reverse;
   }
-  .banner-img{
+  .banner-img {
+    padding-right: 0;
     margin-bottom: 90px;
   }
   .gamer-img {
@@ -552,9 +578,8 @@ footer {
   .gamer-content {
     text-align: center;
   }
-  .card-content{
+  .card-content {
     flex-wrap: wrap;
-    
   }
   .play-title {
     margin-left: 0;
@@ -563,7 +588,7 @@ footer {
   .play-description {
     text-align: center;
   }
-  .sponsor-content{
+  .sponsor-content {
     grid-template-columns: repeat(4, 1fr);
   }
 }
